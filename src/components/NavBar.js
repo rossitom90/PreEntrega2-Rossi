@@ -1,11 +1,32 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
     <>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">Crypto Merch</a>
+          <Link to="/" className="btn btn-ghost normal-case text-xl">
+            Crypto Merch
+          </Link>
+        </div>
+
+        <div className="flex-2">
+          <Link to="/shop" className="btn btn-ghost normal-case text-xl">
+            Ethereum
+          </Link>
+        </div>
+
+        <div className="flex-2">
+          <Link to="/shop" className="btn btn-ghost normal-case text-xl">
+            Bitcoin
+          </Link>
+        </div>
+
+        <div className="flex-2">
+          <Link to="/shop" className="btn btn-ghost normal-case text-xl">
+            Merch
+          </Link>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
@@ -54,16 +75,15 @@ const NavBar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
+                <Link to="/shop">
+                  Ethereum <span className="badge">New</span>
+                </Link>
               </li>
               <li>
-                <a>Settings</a>
+                <Link to="/shop">Bitcoin</Link>
               </li>
               <li>
-                <a>Logout</a>
+                <Link to="/shop">Merch</Link>
               </li>
             </ul>
           </div>

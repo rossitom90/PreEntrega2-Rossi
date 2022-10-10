@@ -22,7 +22,7 @@ const ItemList = () => {
 
   return (
     <>
-      <div>Tienda 2</div>
+      <div>Lista de Productos</div>
       {items.map((i) => (
         <ItemCard key={i.id} {...i} />
       ))}
