@@ -6,6 +6,7 @@ import ItemList from './components/shop/ItemList'
 import ItemDetail from './components/shop/ItemDetails'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Error404 from './components/Error404'
+import StarWarsContainer from './components/API/api'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path={'/shop'} element={<ItemList />} />
           <Route path={'/shop/item/:id'} element={<ItemDetail />} />
           <Route path={'/*'} element={<Error404 />} />
+          <Route path={'/swapi'} element={<StarWarsContainer />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -28,6 +28,12 @@ const NavBar = () => {
             Merch
           </Link>
         </div>
+
+        <div className="flex-2">
+          <Link to="/swapi" className="btn btn-ghost normal-case text-xl">
+            swapi
+          </Link>
+        </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle">

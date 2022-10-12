@@ -43,17 +43,7 @@ const ItemDetail = () => {
     })
   }
 
-  return (
-    <>
-      {/* { !loading &&
-          <div className='m-8'>
-            <div>{ item.name }</div>
-            <div>Price: { item.price }</div>
-          </div>
-      } */}
-      {loading ? <Loading /> : <Item item={item} />}
-    </>
-  )
+  return <>{loading ? <Loading /> : <Item item={item} />}</>
 }
 
 export default ItemDetail
